@@ -16,10 +16,10 @@ $batch:=$AIClient.embeddings.create(\
 ["Achy Breaky Heart is a country song written by Don Von Tress. Originally titled Don't Tell My Heart and performed by The Marcy Brothers in 1991. "; \
 "Who made the song My achy breaky heart?"])
 
-$fr:=$batch.embeddings[0].embedding
-$en:=$batch.embeddings[1].embedding
+$e1:=$batch.embeddings[0].embedding
+$e2:=$batch.embeddings[1].embedding
 
-$cosineSimilarity:=$fr.cosineSimilarity($en)
+$cosineSimilarity:=$e2.cosineSimilarity($e1)
 
 ALERT([$cosineSimilarity].join())
 ```
