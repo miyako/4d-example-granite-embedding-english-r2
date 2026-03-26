@@ -1,0 +1,4 @@
+Granite/Data/*
+Granite/Project/DerivedData/formAttributes.json
+Granite/Project/DerivedData/methodAttributes.json
+Granite/userPreferences.*
